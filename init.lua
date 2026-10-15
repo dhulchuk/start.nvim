@@ -1,3 +1,6 @@
+-- for obsidian
+-- vim.o.conceallevel = 2
+
 --[[
 
 =====================================================================
@@ -120,9 +123,9 @@ vim.o.showmode = false
 --  Remove this option if you want your OS clipboard to remain independent.
 --  See `:help 'clipboard'`
 -- xdmn
--- vim.schedule(function()
---   vim.o.clipboard = 'unnamedplus'
--- end)
+vim.schedule(function()
+  vim.o.clipboard = 'unnamedplus'
+end)
 
 -- Enable break indent
 vim.o.breakindent = true
@@ -979,8 +982,29 @@ require('lazy').setup({
     --    - Incremental selection: Included, see `:help nvim-treesitter-incremental-selection-mod`
     --    - Show your current context: https://github.com/nvim-treesitter/nvim-treesitter-context
     --    - Treesitter + textobjects: https://github.com/nvim-treesitter/nvim-treesitter-textobjects
-  },
-
+    --
+  --   {
+  --     'obsidian-nvim/obsidian.nvim',
+  --     version = '*', -- use latest release, remove to use latest commit
+  --     ft = 'markdown',
+  --     ---@module 'obsidian'
+  --     ---@type obsidian.config
+  --     opts = {
+  --       legacy_commands = false, -- this will be removed in the next major release
+  --       workspaces = {
+  --         {
+  --           name = 'vault',
+  --           path = '~/obsidian/vault',
+  --         },
+  --         -- {
+  --         --   name = 'work',
+  --         --   path = '~/vaults/work',
+  --         -- },
+  --       },
+  --     },
+  --   },
+  -- },
+  --
   -- The following comments only work if you have downloaded the kickstart repo, not just copy pasted the
   -- init.lua. If you want these files, they are in the repository, so you can just download them and
   -- place them in the correct locations.
