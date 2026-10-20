@@ -983,27 +983,27 @@ require('lazy').setup({
     --    - Show your current context: https://github.com/nvim-treesitter/nvim-treesitter-context
     --    - Treesitter + textobjects: https://github.com/nvim-treesitter/nvim-treesitter-textobjects
     --
-  --   {
-  --     'obsidian-nvim/obsidian.nvim',
-  --     version = '*', -- use latest release, remove to use latest commit
-  --     ft = 'markdown',
-  --     ---@module 'obsidian'
-  --     ---@type obsidian.config
-  --     opts = {
-  --       legacy_commands = false, -- this will be removed in the next major release
-  --       workspaces = {
-  --         {
-  --           name = 'vault',
-  --           path = '~/obsidian/vault',
-  --         },
-  --         -- {
-  --         --   name = 'work',
-  --         --   path = '~/vaults/work',
-  --         -- },
-  --       },
-  --     },
-  --   },
-  -- },
+    --   {
+    --     'obsidian-nvim/obsidian.nvim',
+    --     version = '*', -- use latest release, remove to use latest commit
+    --     ft = 'markdown',
+    --     ---@module 'obsidian'
+    --     ---@type obsidian.config
+    --     opts = {
+    --       legacy_commands = false, -- this will be removed in the next major release
+    --       workspaces = {
+    --         {
+    --           name = 'vault',
+    --           path = '~/obsidian/vault',
+    --         },
+    --         -- {
+    --         --   name = 'work',
+    --         --   path = '~/vaults/work',
+    --         -- },
+    --       },
+    --     },
+    --   },
+  },
   --
   -- The following comments only work if you have downloaded the kickstart repo, not just copy pasted the
   -- init.lua. If you want these files, they are in the repository, so you can just download them and
